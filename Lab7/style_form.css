@@ -1,0 +1,132 @@
+*{
+	box-sizing: border-box;
+}
+
+.font_style {
+    font: 12pt Roboto, monospace;  
+	font-size: 105%;
+	color: #011073;
+   } 
+.hidden{
+display: none;
+}
+
+input[type=text], textarea, input[type=date], input[type=number], input[type=range], input[type=tel],
+input[type=URL], input[type=email], input[type=color], input[type=password], input[type=datetime],
+input[type=time], input[type=month], input[type=week], input[type=datetime-local], select, option {
+	width: 80%;
+	padding: 12px;
+	border: 1px solid gray;
+	border-radius: 4px;
+	resize: vertical;
+	font-family: 12pt Roboto;
+	margin-top: 10px;
+}
+	
+
+input[type=radio] {
+	width: 20%;
+}
+	
+input:focus {
+  border: 2px solid #ffa647;
+}
+
+label {
+	padding-top: 9px;
+	padding-bottom: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline-block;
+}
+
+input[type=submit],input[type=reset], input[type=button], input[type=file], button {
+	background-color: #f78e05;
+	color: white;
+	padding: 12px 20px;
+	border: 1px solid #ff8c00;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+	margin-top: 10px;
+	margin-left: 20px;
+	font-size: 100%;
+}
+
+button:hover {
+	background-color: #ffb700;
+}
+
+input[type=file]:hover {
+	background-color: #ffb700;
+}
+input[type=color]:hover {
+	background-color: #ffb700;
+}
+
+input[type=submit]:hover {
+	background-color: #ffb700;
+}
+
+input[type=button]:hover {
+	background-color: #ffb700;
+}
+
+input[type=reset]:hover {
+	background-color: #ffb700;
+}
+
+.container {
+    width: 85%;
+	border-radius: 5px;
+	background-color: white;
+	padding: 45px;
+}
+
+.col-label {
+	float: left;
+	width: 25%;
+	margin-top: 7px;
+}
+.col-item {
+	float: left;
+	width: 75%;
+	margin-top: 7px;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body {
+        background-image:linear-gradient(to right top, white, 45%, orange, #ff8503);
+        background-position: top;
+        background-attachment: fixed;
+        margin-top: 50px;
+		margin-bottom: 50px;
+}
+
+
+table {
+	text-align: center;
+	margin: auto;
+	width: 80%;
+	column-rule: inset, white;
+	font: 12pt Roboto, monospace;  
+	font-size: 105%;
+	color: #011073;
+	padding: 5px;
+	background-color: white;
+}
+td, th {
+	padding: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .col-item, .col-label, input[type=submit],input[type=reset], input[type=button], input[type=file], button {
+    width: 100%;
+    margin-top: 0;
+	float: right;
+  }
+}
