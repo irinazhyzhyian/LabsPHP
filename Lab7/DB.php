@@ -54,7 +54,7 @@ FROM `countries` NATURAL JOIN government NATURAL JOIN continents " );
 		foreach($values as $key=>$value):
 			if($key=="id_language" && $value!=null) {
 				if($i!=0)
-					$query="OR ";
+					$query.="OR ";
 				$query .= "(SELECT GROUP_CONCAT(languages.language)
 			 				FROM languages NATURAL JOIN country_language
 							 WHERE country_language.id_country = countries.id_country AND (id_language = ";
