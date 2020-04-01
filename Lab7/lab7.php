@@ -5,7 +5,6 @@ require_once( "CountryLanguage.php" );
 require_once( "Language.php" );
 require_once( "Government.php" );
 require_once( "Continent.php" );
-require_once("Service.php");
 
 $continentDB = new Continent();
 $languageDB = new Language();
